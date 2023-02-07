@@ -49,6 +49,7 @@ body{
 }
 
 .home-section{
+    /* border: solid red; */
     width: 100%;
     height: 100vh;
     padding: 0 150px;
@@ -58,6 +59,13 @@ body{
     top: 0;
     opacity: 0;
     transition: 1s;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 1px;
 }
 
 .hero-heading{
@@ -213,9 +221,18 @@ body{
     position: relative;
     /* filter: blur(2px); */
 }
+/* 
+.about-img:hover .download-cv-btn{
+    opacity: 1; 
+    border: solid red; 
+} */
+ 
+
 .about-img:hover{
     filter: blur(5px);
+    /* border: solid green; */
 }
+
 .about-info{
     color: #fff;
     opacity: 0.6;
@@ -230,9 +247,12 @@ body{
     border-radius: 20px;
 }
 
+
+
 .download-cv-btn{
+    /* opacity: 0; */
     position: absolute;
-    bottom: 20px;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
@@ -247,6 +267,7 @@ body{
 }
 
 .download-cv-btn:hover{
+    opacity: 1;
     background: #000;
 }
 
