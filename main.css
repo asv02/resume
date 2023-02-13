@@ -170,9 +170,9 @@ body{
 }
 
 .project-btn-grp{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .project-btn{
@@ -183,9 +183,15 @@ body{
     background: #000;
     color: #fff;
     cursor: pointer;
+    margin-right: 5px;
+}
+.github{
+    border: solid black;
+    margin-right: 7px;
 }
 
 .project-btn.live{
+    margin-left: 7px;
     background: none;
     border: 2px solid #fff;
 }
@@ -474,6 +480,7 @@ body{
 }
 
 .contact-section{
+    /* display: flex; */
     position: absolute;
     top: 0;
     opacity: 0;
